@@ -1,9 +1,9 @@
 package motorElectrico;
 
-public class MotorElectricoBasico implements MotorElectrico {
+public class MotorElectricoComun implements MotorElectrico {
   @Override
   public void conectar() {
-    System.out.println("Conectando motor electrico");
+    System.out.println("Motor electrico comun conectado");
   }
 
   @Override
@@ -13,12 +13,12 @@ public class MotorElectricoBasico implements MotorElectrico {
 
   @Override
   public void moverMasRapido() {
-    System.out.println("moviendo rapido");
+    System.out.println("Moviendo rapido");
   }
 
   @Override
   public void detener() {
-    System.out.println("detener");
+    System.out.println("Detener");
   }
 
   @Override
