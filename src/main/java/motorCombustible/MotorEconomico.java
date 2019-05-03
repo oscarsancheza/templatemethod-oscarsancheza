@@ -4,7 +4,7 @@ public class MotorEconomico implements MotorCombustible {
 
   @Override
   public void encender() {
-    System.out.println("Motor Economico Encendido");
+    System.out.println("Motor economico encendido");
   }
 
   @Override

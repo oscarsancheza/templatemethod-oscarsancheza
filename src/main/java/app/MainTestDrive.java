@@ -4,12 +4,12 @@ import adapters.MotorElectricoAdapter;
 import motorCombustible.MotorComun;
 import motorCombustible.MotorCombustible;
 import motorCombustible.MotorEconomico;
-import motorElectrico.MotorElectricoBasico;
+import motorElectrico.MotorElectricoComun;
 
 public class MainTestDrive {
 
   public static void main(String[] args) {
-    MotorCombustible motorElectricoAdapter = new MotorElectricoAdapter(new MotorElectricoBasico());
+    MotorCombustible motorElectricoAdapter = new MotorElectricoAdapter(new MotorElectricoComun());
     motorElectricoAdapter.encender();
     motorElectricoAdapter.acelerar();
     motorElectricoAdapter.apagar();
