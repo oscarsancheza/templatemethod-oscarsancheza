@@ -9,21 +9,18 @@ import org.junit.Test;
 
 public class MotorMainTest {
 
-  MotorElectrico motorElectrico;
   MotorCombustible motorCombustible;
-  MotorElectricoAdapter motorElectricoAdapter;
 
   @Before
   public void setup() {
-    motorElectrico = new MotorElectricoBasico();
   }
 
   @Test
   public void motorElectrico() {
-    motorElectricoAdapter = new MotorElectricoAdapter(motorElectrico);
-    motorElectricoAdapter.encender();
-    motorElectricoAdapter.acelerar();
-    motorElectricoAdapter.apagar();
+    motorCombustible = new MotorElectricoAdapter(new MotorElectricoBasico());
+    motorCombustible.encender();
+    motorCombustible.acelerar();
+    motorCombustible.apagar();
     System.out.println();
   }
 

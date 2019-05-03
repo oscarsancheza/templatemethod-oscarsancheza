@@ -10,8 +10,7 @@ import motorElectrico.MotorElectricoBasico;
 public class MainTestDrive {
 
   public static void main(String[] args) {
-    MotorElectrico motorElectrico = new MotorElectricoBasico();
-    MotorElectricoAdapter motorElectricoAdapter = new MotorElectricoAdapter(motorElectrico);
+    MotorCombustible motorElectricoAdapter = new MotorElectricoAdapter(new MotorElectricoBasico());
     motorElectricoAdapter.encender();
     motorElectricoAdapter.acelerar();
     motorElectricoAdapter.apagar();
