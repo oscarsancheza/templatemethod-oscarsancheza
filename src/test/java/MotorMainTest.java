@@ -1,8 +1,7 @@
 import adapters.MotorElectricoAdapter;
-import motorCombustible.MotorBasico;
+import motorCombustible.MotorComun;
 import motorCombustible.MotorCombustible;
 import motorCombustible.MotorEconomico;
-import motorElectrico.MotorElectrico;
 import motorElectrico.MotorElectricoBasico;
 import org.junit.Before;
 import org.junit.Test;
@@ -25,8 +24,8 @@ public class MotorMainTest {
   }
 
   @Test
-  public void motorBasico() {
-    motorCombustible = new MotorBasico();
+  public void motorComun() {
+    motorCombustible = new MotorComun();
     motorCombustible.encender();
     motorCombustible.acelerar();
     motorCombustible.apagar();
