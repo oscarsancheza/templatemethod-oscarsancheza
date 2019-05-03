@@ -13,6 +13,7 @@ public class MotorElectricoAdapter implements MotorCombustible {
 
   @Override
   public void encender() {
+    motorElectrico.conectar();
     motorElectrico.activar();
   }
 
@@ -24,5 +25,6 @@ public class MotorElectricoAdapter implements MotorCombustible {
   @Override
   public void apagar() {
     motorElectrico.detener();
+    motorElectrico.desconectar();
   }
 }
