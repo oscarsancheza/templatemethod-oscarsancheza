@@ -3,12 +3,12 @@ package motorElectrico;
 public class MotorElectricoBasico implements MotorElectrico {
   @Override
   public void conectar() {
-    System.out.println("Conectando motor Electrico");
+    System.out.println("Conectando motor electrico");
   }
 
   @Override
   public void activar() {
-    System.out.println("Activando");
+    System.out.println("Activando motor electrico");
   }
 
   @Override
