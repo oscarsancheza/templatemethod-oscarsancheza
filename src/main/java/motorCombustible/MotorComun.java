@@ -4,7 +4,7 @@ public class MotorComun implements MotorCombustible {
 
   @Override
   public void encender() {
-    System.out.println("Motor Basico Encendido");
+    System.out.println("Motor comun encendido");
   }
 
   @Override
