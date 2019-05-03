@@ -8,7 +8,7 @@ public class MotorElectricoBasico implements MotorElectrico {
 
   @Override
   public void activar() {
-    System.out.println("Activando motor electrico");
+    System.out.println("Activando");
   }
 
   @Override
