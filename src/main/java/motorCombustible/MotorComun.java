@@ -1,6 +1,6 @@
 package motorCombustible;
 
-public class MotorBasico implements MotorCombustible {
+public class MotorComun implements MotorCombustible {
 
   @Override
   public void encender() {

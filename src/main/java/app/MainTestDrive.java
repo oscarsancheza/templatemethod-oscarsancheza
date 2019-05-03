@@ -1,10 +1,9 @@
 package app;
 
 import adapters.MotorElectricoAdapter;
-import motorCombustible.MotorBasico;
+import motorCombustible.MotorComun;
 import motorCombustible.MotorCombustible;
 import motorCombustible.MotorEconomico;
-import motorElectrico.MotorElectrico;
 import motorElectrico.MotorElectricoBasico;
 
 public class MainTestDrive {
@@ -16,7 +15,7 @@ public class MainTestDrive {
     motorElectricoAdapter.apagar();
     System.out.println();
 
-    MotorCombustible motorCombustibleBasico = new MotorBasico();
+    MotorCombustible motorCombustibleBasico = new MotorComun();
     motorCombustibleBasico.encender();
     motorCombustibleBasico.acelerar();
     motorCombustibleBasico.apagar();
