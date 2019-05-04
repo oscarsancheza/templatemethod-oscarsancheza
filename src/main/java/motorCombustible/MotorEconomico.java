@@ -9,7 +9,7 @@ public class MotorEconomico implements MotorCombustible {
 
   @Override
   public void acelerar() {
-    System.out.println("Acelerando");
+    System.out.println("Acelerando...");
   }
 
   @Override
