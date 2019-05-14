@@ -1,9 +1,17 @@
 package motorCombustible;
 
-public interface MotorCombustible {
-  void encender();
+public abstract class MotorCombustible {
 
-  void acelerar();
+  public final void recorrido() {
+    System.out.println("Inicio de recorrido...");
+    encender();
+    acelerar();
+    apagar();
+  }
 
-  void apagar();
+  protected abstract void encender();
+
+  protected abstract void acelerar();
+
+  protected abstract void apagar();
 }

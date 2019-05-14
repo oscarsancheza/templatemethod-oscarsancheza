@@ -3,7 +3,7 @@ package adapters;
 import motorCombustible.MotorCombustible;
 import motorElectrico.MotorElectrico;
 
-public class MotorElectricoAdapter implements MotorCombustible {
+public class MotorElectricoAdapter extends MotorCombustible {
 
   private MotorElectrico motorElectrico;
 
