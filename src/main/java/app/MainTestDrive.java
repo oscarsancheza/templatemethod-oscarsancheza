@@ -10,20 +10,14 @@ public class MainTestDrive {
 
   public static void main(String[] args) {
     MotorCombustible motorElectricoAdapter = new MotorElectricoAdapter(new MotorElectricoComun());
-    motorElectricoAdapter.encender();
-    motorElectricoAdapter.acelerar();
-    motorElectricoAdapter.apagar();
+    motorElectricoAdapter.recorrido();
     System.out.println();
 
     MotorCombustible motorCombustibleBasico = new MotorComun();
-    motorCombustibleBasico.encender();
-    motorCombustibleBasico.acelerar();
-    motorCombustibleBasico.apagar();
+    motorCombustibleBasico.recorrido();
     System.out.println();
 
     MotorCombustible motorCombustibleEconomico = new MotorEconomico();
-    motorCombustibleEconomico.encender();
-    motorCombustibleEconomico.acelerar();
-    motorCombustibleEconomico.apagar();
+    motorCombustibleEconomico.recorrido();
   }
 }
