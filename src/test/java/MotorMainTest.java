@@ -8,7 +8,7 @@ import org.junit.Test;
 
 public class MotorMainTest {
 
-  MotorCombustible motorCombustible;
+  private MotorCombustible motorCombustible;
 
   @Before
   public void setup() {
@@ -17,27 +17,21 @@ public class MotorMainTest {
   @Test
   public void motorElectrico() {
     motorCombustible = new MotorElectricoAdapter(new MotorElectricoComun());
-    motorCombustible.encender();
-    motorCombustible.acelerar();
-    motorCombustible.apagar();
+    motorCombustible.recorrido();
     System.out.println();
   }
 
   @Test
   public void motorComun() {
     motorCombustible = new MotorComun();
-    motorCombustible.encender();
-    motorCombustible.acelerar();
-    motorCombustible.apagar();
+    motorCombustible.recorrido();
     System.out.println();
   }
 
   @Test
   public void motorEconomico() {
     motorCombustible = new MotorEconomico();
-    motorCombustible.encender();
-    motorCombustible.acelerar();
-    motorCombustible.apagar();
+    motorCombustible.recorrido();
     System.out.println();
   }
 }
